@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Panier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="afficherPanier()">
+
+<header>
+<h1>🛒 Panier</h1>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="livres.html">Livres</a>
+<a href="panier.html">Panier</a>
+<a href="stock.html">Stock</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Votre Panier</h2>
+
+<table>
+<tr>
+<th>Livre</th>
+<th>Prix</th>
+<th>Action</th>
+</tr>
+<tbody id="zonePanier"></tbody>
+</table>
+
+<h3>Total : <span id="total"></span></h3>
+</div>
+
+<h3>Total : <span id="total"></span></h3>
+
+<br>
+<button onclick="genererFacture()">Générer Facture</button>
+<button onclick="simulerPaiement()">Payer Maintenant</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>

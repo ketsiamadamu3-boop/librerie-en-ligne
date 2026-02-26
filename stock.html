@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="afficherStock()">
+
+<header>
+<h1>📦 Gestion Stock</h1>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="livres.html">Livres</a>
+<a href="panier.html">Panier</a>
+<a href="stock.html">Stock</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Stock Disponible</h2>
+
+<table>
+<tr>
+<th>Livre</th>
+<th>Prix</th>
+<th>Stock</th>
+<th>Action</th>
+</tr>
+<tbody id="zoneStock"></tbody>
+</table>
+
+<h2>Ajouter Nouveau Livre</h2>
+
+<input type="text" id="titre" placeholder="Titre du livre">
+<input type="number" id="prix" placeholder="Prix">
+<input type="number" id="quantite" placeholder="Quantité">
+<button onclick="ajouterLivre()">Ajouter Livre</button>
+
+<br><br>
+
+
+<script src="script.js"></script>
+</body>
+</html>
